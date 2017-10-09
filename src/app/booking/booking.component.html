@@ -1,0 +1,91 @@
+<div class="w3-row-padding w3-padding-64 w3-theme-l4" id="booking"
+     style="background-image: url('assets/images/form-bg.jpg')">
+  <h1 class="text-center">Book Now</h1>
+  <hr>
+  <div class=" w6-third w6-margin-bottom">
+    <form>
+      <div class="w3-row-padding">
+        <div class="form-group col-md-6 col-sm-12">
+          <label>Full Name</label>
+          <input [(ngModel)]="booking.name" name="name" class="form-control" placeholder="Full Name"/>
+        </div>
+        <div class="form-group col-md-6 col-sm-12">
+          <label>Phone</label>
+          <input [(ngModel)]="booking.phone" name="phone" class="form-control" placeholder="Phone #"/>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="form-group col-md-6 col-sm-12">
+          <label>Email</label>
+          <input [(ngModel)]="booking.email" id="bemail" name="email" class="form-control" placeholder="Email"/>
+        </div>
+        <div class="form-group col-md-6 col-sm-12">
+          <label>Contact Me Via</label>
+          <select [(ngModel)]="booking.contactVia" name="contactVia" class="form-control">
+            <option value="Doesn't Matter" selected="selected">Doesn't Matter</option>
+            <option value="Email">Email</option>
+            <option value="Phone">Phone</option>
+          </select>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="form-group col-md-6 col-sm-12">
+          <label>Pick Up Date</label>
+          <input [(ngModel)]="booking.pickUpDate" type="date" date-input="yyyy-mm-dd" name="pickUpDate" class="form-control"
+                 placeholder="Pick Up Date">
+        </div>
+        <div class="form-group col-md-6 col-sm-12">
+          <label>Pick Up Time</label>
+          <input [(ngModel)]="booking.pickUpTime" name="pickUpTime" class="form-control" type="time"
+                 placeholder="Pick Up Time">
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="form-group col-md-6 col-sm-12">
+          <label>Pick Up Location</label>
+          <input [(ngModel)]="booking.pickUpLoc" name="pickUpLoc" class="form-control"
+                 placeholder="Pick Up Location">
+        </div>
+        <div class="form-group col-md-6 col-sm-12">
+          <label>Drop-Off Location</label>
+          <input [(ngModel)]="booking.dropLoc" name="dropLoc" class="form-control"
+                 placeholder="Drop-Off Location">
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="form-group col-md-12 col-sm-12">
+          <label>Special Instructions</label>
+          <textarea [(ngModel)]="booking.instruction" name="instruction" class="form-control"
+                    rows="4"
+                    placeholder="special instructions"></textarea>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="padding-right:10px">
+        <button type="reset" class="w3-button w3-dark-grey pull-left">Reset</button>
+        <a style="text-decoration: none;" class="w3-button w3-dark-grey pull-right" (click)="submitBooking()">Submit</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="bookingModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+

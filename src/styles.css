@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://www.w3schools.com/w3css/4/w3.css";
+@import "https://www.w3schools.com/lib/w3-theme-black.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css";
+
+#contact, #fleet {
+  background-color: #ffffff;
+}
+
+#contact, #prices {
+  background-color: ghostwhite;
+}
+
+td {
+  width: 50%
+}
+
+
