@@ -4,7 +4,7 @@
   <hr>
   <div class=" w6-third w6-margin-bottom">
     <form>
-      <div class="w3-row-padding">
+      <div class="w3-row-padding" style="margin:0 -8px;">
         <div class="form-group col-md-6 col-sm-12">
           <label>Full Name</label>
           <input [(ngModel)]="booking.name" name="name" class="form-control" placeholder="Full Name"/>
@@ -14,7 +14,7 @@
           <input [(ngModel)]="booking.phone" name="phone" class="form-control" placeholder="Phone #"/>
         </div>
       </div>
-      <div class="w3-row-padding" style="margin:0 -16px;">
+      <div class="w3-row-padding" style="margin:0 -8px;">
         <div class="form-group col-md-6 col-sm-12">
           <label>Email</label>
           <input [(ngModel)]="booking.email" id="bemail" name="email" class="form-control" placeholder="Email"/>
@@ -28,7 +28,7 @@
           </select>
         </div>
       </div>
-      <div class="w3-row-padding" style="margin:0 -16px;">
+      <div class="w3-row-padding" style="margin:0 -8px;">
         <div class="form-group col-md-6 col-sm-12">
           <label>Pick Up Date</label>
           <input [(ngModel)]="booking.pickUpDate" type="date" date-input="yyyy-mm-dd" name="pickUpDate" class="form-control"
@@ -40,7 +40,7 @@
                  placeholder="Pick Up Time">
         </div>
       </div>
-      <div class="w3-row-padding" style="margin:0 -16px;">
+      <div class="w3-row-padding" style="margin:0 -8px;">
         <div class="form-group col-md-6 col-sm-12">
           <label>Pick Up Location</label>
           <input [(ngModel)]="booking.pickUpLoc" name="pickUpLoc" class="form-control"
@@ -52,7 +52,7 @@
                  placeholder="Drop-Off Location">
         </div>
       </div>
-      <div class="w3-row-padding" style="margin:0 -16px;">
+      <div class="w3-row-padding" style="margin:0 -8px;">
         <div class="form-group col-md-12 col-sm-12">
           <label>Special Instructions</label>
           <textarea [(ngModel)]="booking.instruction" name="instruction" class="form-control"
