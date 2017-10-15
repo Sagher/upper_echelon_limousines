@@ -1,24 +1,27 @@
 <div class="w3-top">
-  <div class="w3-bar w3-theme-d2 w3-left-align" style="background-color: #000000 !important">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
-       href="javascript:void(0);" (click)="openNav()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-teal" style="background-color: #fbfbfb ; width:15%">
-      <b>UE</b>
+  <div class="w3-bar w3-theme-d2 w3-left-align nav-all-sizes">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2 nav-all-sizes"
+       href="javascript:void(0);" (click)="openNav()">
+      <i class="fa fa-bars nav-all-sizes"></i>
+    </a>
+    <a href="#" class="w3-bar-item w3-button" style="margin-top: -5px !important;">
+      <img src="../../assets/images/logo1.png">
     </a>
     <a href="#myPage" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
     <a href="#aboutus" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Us</a>
     <a href="#booking" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Booking</a>
     <a href="#prices" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Prices</a>
+    <a href="#fleet" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Fleet</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact Us</a>
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium"
-       style="background-color:#000000 !important">
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium nav-all-sizes">
     <a href="#myPage" (click)="openNav()" class="w3-bar-item w3-button">home</a>
     <a href="#aboutus" (click)="openNav()" class="w3-bar-item w3-button">About Us</a>
     <a href="#booking" (click)="openNav()" class="w3-bar-item w3-button">Booking</a>
     <a href="#prices" (click)="openNav()" class="w3-bar-item w3-button">Prices</a>
+    <a href="#fleet" (click)="openNav()" class="w3-bar-item w3-button">Fleet</a>
     <a href="#contact" (click)="openNav()" class="w3-bar-item w3-button">Contact Us</a>
   </div>
 </div>

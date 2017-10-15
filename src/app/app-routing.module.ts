@@ -4,6 +4,7 @@ import {AboutusComponent} from './aboutus/aboutus.component';
 import {BookingComponent} from './booking/booking.component';
 import {PricesComponent} from './prices/prices.component';
 import {ContactusComponent} from './contactus/contactus.component';
+import {FleetComponent} from './fleet/fleet.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'aboutus', component: AboutusComponent},
   {path: 'booking', component: BookingComponent},
   {path: 'prices', component: PricesComponent},
+  {path: 'fleet', component: FleetComponent},
   {path: 'contact', component: ContactusComponent},
   {path: '*', redirectTo: ''}
 ];
